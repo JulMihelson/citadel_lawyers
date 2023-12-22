@@ -140,9 +140,6 @@ body {
   text-transform: uppercase;
   text-shadow: 1px 0 1px var(--black-text), 0 1px 1px var(--black-text),
     -1px 0 1px var(--black-text), 0 -1px 1px var(--black-text);
-  /* opacity: 0;
-  animation: ani 7s forwards;
-   */
 }
 
 @keyframes ani {
@@ -210,12 +207,6 @@ body {
   justify-content: space-between;
   max-height: 470px;
 }
-/* .practice-list > li {
- display: inline-block;
-  line-height: 1;
-
-  position: relative;
-} */
 
 .development {
   background-image: url(./assets/low-angle-view-skyscrapers-2048x1367-black.jpg);
@@ -302,22 +293,16 @@ body {
   gap: 25px;
   position: absolute;
   overflow: hidden;
+
+  transition: max-height 400ms cubic-bezier(0.42, 0, 1, 1);
   transition: max-height 400ms ease, visibility 400ms ease, transform 400ms ease;
-  /* transition: height 400ms ease, visibility 400ms ease, transform 400ms ease; */
-  /* -webkit-transition: max-height 0.4s linear;
-  -moz-transition: max-height 0.4s linear;
-  transition: max-height 0.4s linear; */
 }
-/* .practice-list > .opened-practice-development {
-  display: flex;
-
-  /* overflow: hidden; */
-
-/* width: 100vw; */
 
 .is-hidden {
   visibility: hidden;
   pointer-events: none;
   max-height: 0px;
+
+  transition: max-height 400ms cubic-bezier(0.42, 0, 1, 1);
   transition: max-height 400ms ease, visibility 400ms ease, transform 400ms ease;
 }
