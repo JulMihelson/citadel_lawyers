@@ -1,24 +1,35 @@
 (() => {
   const refs = {
-    openCard: document.querySelector("#development"),
-    closeCard: document.querySelector(".button-close"),
-    card: document.querySelector(".opened-practice"),
+    openCardDevelopment: document.querySelector("#development"),
+    openCardCorporative: document.querySelector("#corporative"),
+    openCardTax: document.querySelector("#tax"),
+    openCardIt: document.querySelector("#it"),
+
+    closeCardDevelopment: document.querySelector(".button-close-development"),
+    closeCardCorporative: document.querySelector(".button-close-corporative"),
+    closeCardTax: document.querySelector(".button-close-tax"),
+    closeCardIt: document.querySelector(".button-close-it"),
+
+    cardDevelopment: document.querySelector(".opened-practice-development"),
+    cardCorporative: document.querySelector(".opened-practice-corporative"),
+    cardTax: document.querySelector(".opened-practice-tax"),
+    cardIt: document.querySelector(".opened-practice-it"),
   };
 
-  refs.openCard.addEventListener("click", toggleCard);
-  refs.closeCard.addEventListener("click", toggleCard);
-  refs.card.addEventListener("transitionend", () => {
-    if (card.style.height !== "0px") {
-      card.style.height = "auto";
-    }
-  });
+  refs.openCardDevelopment.addEventListener("click", toggleCard);
+  refs.openCardCorporative.addEventListener("click", toggleCard);
+  refs.openCardTax.addEventListener("click", toggleCard);
+  refs.openCardIt.addEventListener("click", toggleCard);
+
+  refs.closeCardDevelopment.addEventListener("click", toggleCard);
+  refs.closeCardCorporative.addEventListener("click", toggleCard);
+  refs.closeCardTax.addEventListener("click", toggleCard);
+  refs.closeCardIt.addEventListener("click", toggleCard);
+
   function toggleCard() {
-    if (refs.card.style.height === "0px") {
-      refs.card.style.height = "370px";
-    } else {
-      refs.card.style.height = "370px";
-      window.getComputedStyle(refs.card, null).getPropertyValue("height");
-      refs.card.style.height = "0";
-    }
+    refs.cardDevelopment.classList.toggle("is-hidden");
+    refs.cardCorporative.classList.toggle("is-hidden");
+    refs.cardTax.classList.toggle("is-hidden");
+    refs.cardIt.classList.toggle("is-hidden");
   }
 })();

@@ -51,11 +51,7 @@ body {
   max-width: 100%;
   margin: 0 auto;
 }
-.is-hidden {
-  visibility: hidden;
-  pointer-events: none;
-  opacity: 0;
-}
+
 /*ХЕДДЕР*/
 .header-container {
   position: fixed;
@@ -249,20 +245,25 @@ body {
 .it:focus {
   background-image: url(./assets/gettyimages-551986589-2048x2048.jpg);
 }
-.opened-practice {
+.opened-practice-development,
+.opened-practice-corporative {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 370px;
+  max-height: 370px;
   margin-top: 80px;
+  padding: 50px 15px;
+  background-color: rgb(247, 247, 247);
   gap: 25px;
-  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  transition-property: height;
-  transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: max-height 400ms ease, visibility 400ms ease, transform 400ms ease;
+  /* transition: height 400ms ease, visibility 400ms ease, transform 400ms ease; */
+}
+
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  max-height: 0px;
 }
 .card-content {
   display: flex;
@@ -292,9 +293,13 @@ body {
   height: 15px;
 }
 .button-close {
+  position: absolute;
+  top: 30px;
+  right: 20px;
   width: 20px;
   height: 20px;
   background-color: transparent;
-  margin-right: 60px;
-  align-self: flex-end;
+
+  /* margin-right: 60px;
+  align-self: flex-end; */
 }
