@@ -125,7 +125,6 @@ body {
   margin-top: 10px;
   padding-left: 330px;
   opacity: 0;
-
   animation: ani 6s forwards;
 }
 
@@ -212,6 +211,9 @@ body {
   background-image: url(./assets/low-angle-view-skyscrapers-2048x1367-black.jpg);
   height: 220px;
   width: 330px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
 }
 .development:hover,
 .development:focus {
@@ -271,7 +273,10 @@ body {
   width: 15px;
   height: 15px;
 }
-.button-close-development {
+.button-close-development,
+.button-close-corporative,
+.button-close-tax,
+.button-close-it {
   position: absolute;
   top: 30px;
   right: 20px;
@@ -279,10 +284,24 @@ body {
   height: 20px;
   background-color: transparent;
   display: inline-block;
+  color: black;
+}
+
+.button-close-development:hover,
+.button-close-development:focus,
+.button-close-corporative:hover,
+.button-close-corporative:focus,
+.button-close-tax:hover,
+.button-close-tax:focus,
+.button-close-it:hover,
+.button-close-it:focus {
+  color: var(--orange-accent);
 }
 
 .opened-practice-development,
-.opened-practice-corporative {
+.opened-practice-corporative,
+.opened-practice-tax,
+.opened-practice-it {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -293,16 +312,50 @@ body {
   gap: 25px;
   position: absolute;
   overflow: hidden;
-
+  left: 0;
+  transition: max-height 2s cubic-bezier(0.19, 1, 0.22, 1);
+  /* 
   transition: max-height 400ms cubic-bezier(0.42, 0, 1, 1);
-  transition: max-height 400ms ease, visibility 400ms ease, transform 400ms ease;
+  transition: max-height 400ms ease, visibility 400ms ease, transform 400ms ease; */
 }
 
 .is-hidden {
   visibility: hidden;
   pointer-events: none;
   max-height: 0px;
+  transition: accordionOut 2s cubic-bezier(0.19, 1, 0.22, 1);
+  /* transition: max-height 400ms cubic-bezier(0.42, 0, 1, 1);
+  transition: max-height 400ms ease, visibility 400ms ease, transform 400ms ease; */
+}
 
-  transition: max-height 400ms cubic-bezier(0.42, 0, 1, 1);
-  transition: max-height 400ms ease, visibility 400ms ease, transform 400ms ease;
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+.cardText {
+  padding: 5px 10px;
+  max-width: 330px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+.cardText:hover,
+.cardText:focus {
 }
