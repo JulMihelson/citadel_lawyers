@@ -35,16 +35,16 @@ User
 
           <ul class="header-menu">
             <li class="header-menu-item">
-              <a class="link active-link" href="index.html">про нас</a>
+              <a class="link active-link" href="#about_us">про нас</a>
             </li>
             <li class="header-menu-item">
-              <a class="link" href="#">практики</a>
+              <a class="link" href="#practicies">практики</a>
             </li>
             <li class="header-menu-item">
-              <a class="link" href="">соціальний проєкт</a>
+              <a class="link" href="#social-project">соціальний проєкт</a>
             </li>
             <li class="header-menu-item">
-              <a class="link" href="">контакти</a>
+              <a class="link" href="#contacts">контакти</a>
             </li>
           </ul>
         </nav>
@@ -66,7 +66,7 @@ User
         </div>
       </section>
       <section class="about-us" id="about_us">
-        <div class="container">
+        <!-- <div class="container"> -->
           <div class="content">
             <div class="vert-line"></div>
             <p class="subtitle">команда</p>
@@ -87,11 +87,11 @@ User
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
       <section id="practicies" class="practicies">
-        <div class="tab">
-          <div class="tab-nav">
+        <div class="tab" >
+          <div class="tab-nav" toToggleCard>
             <a class="tab-link" href="#development">
               <img
                 src="./assets/low-angle-view-skyscrapers-2048x1367.jpg"
@@ -118,7 +118,8 @@ User
                 height="200"
             /></a>
           </div>
-          <div class="tab-content opened-practice-development" id="development">
+          <div class="tab-content" id="development">
+            <div class="card-look">
             <img
               src="./assets/low-angle-view-skyscrapers-2048x1367.jpg"
               width="500"
@@ -174,10 +175,12 @@ User
                   - консультування з питань оподаткування учасників
                   інвестиційних проєктів та будівельного процесу;
                 </li>
-              </ul>
+              </ul></div>
+              
             </div>
           </div>
-          <div class="tab-content opened-practice-corporative" id="corporative">
+          <div class="tab-content" id="corporative">
+            <div class="card-look">
             <img
               src="./assets/gettyimages-160473461-2048x2048.jpg"
               width="500"
@@ -223,9 +226,11 @@ User
                   спільного інвестування (ПІФ, КІФ);
                 </li>
               </ul>
+              </div>
             </div>
           </div>
-          <div class="tab-content opened-practice-tax" id="tax">
+          <div class="tab-content" id="tax">
+            <div class="card-look">
             <img
               src="./assets/gettyimages-1160414561-2048x2048.jpg"
               width="500"
@@ -270,9 +275,11 @@ User
                   уникнення подвійного оподаткування, конвенції MLI;
                 </li>
               </ul>
+              </div>
             </div>
           </div>
-          <div class="tab-content opened-practice-it" id="it">
+          <div class="tab-content" id="it">
+            <div class="card-look">
             <img
               src="./assets/gettyimages-551986589-2048x2048.jpg"
               width="500"
@@ -308,6 +315,7 @@ User
                 </li>
                 <li>- повний юридичний супровід діяльності ІТ-компаній;</li>
               </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -357,7 +365,7 @@ User
         </div>
       </section>
     </main>
-    <footer class="footer-container">
+    <footer id="contacts" class="footer-container">
 <ul class="contact-block"><li><a href="mailto:mail@mail.com"></a>mail@mail.com</li>
 <li><a href="tel: +380500505050"></a>+38 044 000 00 00</li>
 <li><a href="https://maps.app.goo.gl/r8JqjMeiHkC2CvdK7"></a>бульвар Шевченка, 35</li></ul>

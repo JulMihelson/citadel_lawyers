@@ -39,10 +39,10 @@
     closeCardTax: document.querySelector(".button-close-tax"),
     closeCardIt: document.querySelector(".button-close-it"),
 
-    cardDevelopment: document.querySelector(".opened-practice-development"),
-    cardCorporative: document.querySelector(".opened-practice-corporative"),
-    cardTax: document.querySelector(".opened-practice-tax"),
-    cardIt: document.querySelector(".opened-practice-it"),
+    cardDevelopment: document.querySelector("#development"),
+    cardCorporative: document.querySelector("#corporative"),
+    cardTax: document.querySelector("#tax"),
+    cardIt: document.querySelector("#it"),
   };
 
   refs.closeCardDevelopment.addEventListener("click", toggleCardDevelopment);
@@ -67,10 +67,7 @@
   }
 
   function toggleDisplay(element) {
-    // Get the current display property
     const currentDisplay = window.getComputedStyle(element).display;
-
-    // Toggle between 'none' and 'block'
     element.style.display = currentDisplay === "none" ? "block" : "none";
   }
 })();
