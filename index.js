@@ -1,73 +1,58 @@
-// (() => {
+const refs = {
+  contentCard: document.querySelector(".tab-content"),
+  tabLink: document.querySelectorAll(".tab-link"),
+  // cardDevelopment: document.querySelector("#development"),
+  //   cardCorporative: document.querySelector("#corporative"),
+  //   cardTax: document.querySelector("#tax"),
+  //   cardIt: document.querySelector("#it"),
+  // closeCardDevelopment: document.querySelector("#development"),
+  // closeCardCorporative: document.querySelector("#corporative"),
+  // closeCardTax: document.querySelector("#tax"),
+  // closeCardIt: document.querySelector("#it"),
+};
+// window.addEventListener("click", closeCard);
+refs.tabLink.forEach((element) => {
+  element.addEventListener("click", navClick);
+});
+// refs.closeCardDevelopment.addEventListener("click", closeCard);
+// refs.closeCardCorporative.addEventListener("click", closeCard);
+// refs.closeCardTax.addEventListener("click", closeCard);
+// refs.closeCardIt.addEventListener("click", closeCard);
+let activeTab = null;
+
+function navClick(event) {
+  event.preventDefault();
+  console.log(
+    "navLink",
+    event.target,
+    event.currentTarget,
+    event.currentTarget
+  );
+}
+window.document;
+function closeCard(event) {
+  const target = event.target;
+  if (target === refs.contentCard) {
+  }
+  console.log(target, "target");
+  console.log(event.currentTarget);
+  console.log(refs.contentCard, "contentCard");
+  console.log(window.document, "wind");
+}
+
+// () => {
 //   const refs = {
-//     closeCardDevelopment: document.querySelector(".button-close-development"),
-//     closeCardCorporative: document.querySelector(".button-close-corporative"),
-//     closeCardTax: document.querySelector(".button-close-tax"),
-//     closeCardIt: document.querySelector(".button-close-it"),
-
-//     cardDevelopment: document.querySelector(".opened-practice-development"),
-//     cardCorporative: document.querySelector(".opened-practice-corporative"),
-//     cardTax: document.querySelector(".opened-practice-tax"),
-//     cardIt: document.querySelector(".opened-practice-it"),
+//     card: document.querySelector(".tab-link"),
 //   };
-
-//   refs.closeCardDevelopment.addEventListener("click", closeDevelopment);
-//   refs.closeCardCorporative.addEventListener("click", closeCorporative);
-//   refs.closeCardTax.addEventListener("click", closeTax);
-//   refs.closeCardIt.addEventListener("click", closeIt);
-
-//   function closeDevelopment() {
-//     refs.cardDevelopment.style.display = "none";
+//   for (let i = 0; i < refs.card.length; i++) {
+//     card[i].addEventListener("click", () => {
+//       this.classList.toggle("active");
+//       let content = this.nextElementSibling;
+//       if (content.style.maxHeight) {
+//         content.style.maxHeight = null;
+//       } else {
+//         content.style.maxHeight = content.scrollHeight + "px";
+//       }
+//     });
 //   }
-
-//   function closeCorporative() {
-//     refs.cardCorporative.style.display = "none";
-//   }
-
-//   function closeTax() {
-//     refs.cardTax.style.display = "none";
-//   }
-
-//   function closeIt() {
-//     refs.cardIt.style.display = "none";
-//   }
-// })();
-(() => {
-  const refs = {
-    closeCardDevelopment: document.querySelector(".button-close-development"),
-    closeCardCorporative: document.querySelector(".button-close-corporative"),
-    closeCardTax: document.querySelector(".button-close-tax"),
-    closeCardIt: document.querySelector(".button-close-it"),
-
-    cardDevelopment: document.querySelector("#development"),
-    cardCorporative: document.querySelector("#corporative"),
-    cardTax: document.querySelector("#tax"),
-    cardIt: document.querySelector("#it"),
-  };
-
-  refs.closeCardDevelopment.addEventListener("click", toggleCardDevelopment);
-  refs.closeCardCorporative.addEventListener("click", toggleCardCorporative);
-  refs.closeCardTax.addEventListener("click", toggleCardTax);
-  refs.closeCardIt.addEventListener("click", toggleCardIt);
-
-  function toggleCardDevelopment() {
-    toggleDisplay(refs.cardDevelopment);
-  }
-
-  function toggleCardCorporative() {
-    toggleDisplay(refs.cardCorporative);
-  }
-
-  function toggleCardTax() {
-    toggleDisplay(refs.cardTax);
-  }
-
-  function toggleCardIt() {
-    toggleDisplay(refs.cardIt);
-  }
-
-  function toggleDisplay(element) {
-    const currentDisplay = window.getComputedStyle(element).display;
-    element.style.display = currentDisplay === "none" ? "block" : "none";
-  }
-})();
+// };
