@@ -542,3 +542,11 @@ body {
   color: var(--orange-accent);
   filter: grayscale(0);
 }
+.contact-line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact-line svg {
+  margin-right: 15px;
+}
