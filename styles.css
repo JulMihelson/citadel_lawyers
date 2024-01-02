@@ -267,8 +267,6 @@ body {
   transition: all 0.2s ease-in-out;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   margin-bottom: 15px;
-  border: 1px solid white;
-  background-color: #303030;
 }
 @media screen and (max-width: 991px) {
   .card {
@@ -386,16 +384,16 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  .card:nth-of-type(2n) .card__expander {
+  .card:nth-of-type(2n + 2) .card__expander {
     width: calc(200% + 15px);
     left: calc(-100% - 15px);
   }
 
-  .card:nth-of-type(1n) .card__expander {
+  .card:nth-of-type(1n + 2) .card__expander {
     clear: left;
   }
 
-  .card:nth-of-type(1n) {
+  .card:nth-of-type(1n + 2) {
     clear: left;
   }
 
