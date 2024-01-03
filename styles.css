@@ -63,7 +63,7 @@ body {
   justify-content: space-between;
   width: clamp(480px, 100%, 100vw);
   z-index: 100;
-  background-color: black;
+  background-color: rgba(10, 10, 10, 0.7);
 }
 .logo {
   display: inline-block;
@@ -89,7 +89,7 @@ body {
   text-shadow: 2px 2px 5px white;
   font-weight: 600;
   transform: scale(1.1);
-  transition: transform 250ms ease-in-out 0s;
+  transition: transform 250ms ease-in 0s;
 }
 
 /*HERO SECTION */
@@ -109,8 +109,8 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: flex-end;
-  padding-right: 300px;
+  align-items: flex-start;
+  padding-left: 200px;
   height: 100vh;
   color: var(--orange-accent);
   text-transform: uppercase;
