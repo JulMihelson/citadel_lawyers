@@ -5,7 +5,7 @@
 :root {
   --white-text: #e0e0e0;
   --black-text: #303030;
-  --orange-accent: rgb(255, 165, 0);
+  --orange-accent: #ffa500;
   --light-grey: #595959;
 }
 html {
@@ -63,7 +63,7 @@ body {
   justify-content: space-between;
   width: clamp(480px, 100%, 100vw);
   z-index: 100;
-  background-color: rgba(10, 10, 10, 0.7);
+  background-color: rgba(10, 10, 10, 0.5);
 }
 .logo {
   display: inline-block;
@@ -153,11 +153,11 @@ body {
 
 /*ПРО НАС*/
 .about-us {
-  background-image: url(./assets/photo1703054598.jpeg);
-  min-height: 100vh;
+  background-image: url(./assets/photo1704360693.jpeg);
+  height: 980px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: bottom;
   display: flex;
   flex-direction: column;
   padding-top: 170px;
@@ -192,7 +192,7 @@ body {
 .about-us-information {
   padding: 20px 300px;
   color: var(--light-grey);
-  font-size: 14px;
+  font-size: 16px;
   text-transform: none;
   text-align: justify;
 }
@@ -201,6 +201,7 @@ body {
 .practicies {
   padding: 0 30px;
   background-color: #2c2c2c;
+  padding-bottom: 50px;
 }
 
 .card-text {
@@ -301,6 +302,7 @@ body {
 }
 .icon {
   margin-bottom: 5px;
+  fill: var(--white-text);
 }
 
 .card:hover .icon {
@@ -538,10 +540,10 @@ body {
 
 /*FOOTER*/
 .footer-container {
-  background-image: url(./assets/footer-bg.jpg);
+  background-image: url(./assets/photo1704360516.jpeg);
   height: 295px;
-  background-position: cover;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -564,4 +566,9 @@ body {
 }
 .contact-line svg {
   margin-right: 15px;
+  fill: var(--white-text);
+}
+.contact-line:hover svg,
+.contact-line:focus svg {
+  fill: var(--orange-accent);
 }
