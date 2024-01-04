@@ -94,17 +94,6 @@ body {
 
 /*HERO SECTION */
 .hero-titile {
-  /* position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-top: 200px;
-  padding-left: 900px;
-  height: 100vh;
-  color: var(--orange-accent);
-  text-transform: uppercase;
-  text-shadow: 1px 0 1px var(--black-text), 0 1px 1px var(--black-text),
-    -1px 0 1px var(--black-text), 0 -1px 1px var(--black-text); */
-
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -122,8 +111,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: clamp(480px, 100%, 100vw);
-  min-height: 100vh;
+  width: 100vw;
+  /* width: clamp(480px, 100%, 100vw); */
+  /* min-height: 100vh; */
 }
 
 @keyframes ani {
@@ -141,7 +131,12 @@ body {
   font-size: 26px;
   font-family: "Caveat", cursive;
   visibility: hidden;
-  animation: ani 12s forwards;
+  /* animation: ani 12s forwards; */
+  animation-name: ani;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-delay: 2s;
 }
 .hero-sign {
   color: var(--orange-accent);
@@ -150,20 +145,26 @@ body {
   margin-top: 10px;
   padding-left: 330px;
   visibility: hidden;
-  animation: ani 12s forwards;
+  /* animation: ani 12s forwards; */
+  animation-name: ani;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-delay: 4s;
 }
 
 /*ПРО НАС*/
 .about-us {
   background-image: url(./assets/photo1704360693.jpeg);
-  height: 980px;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   display: flex;
   flex-direction: column;
-  padding-top: 170px;
+  padding-top: 50px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .vert-line {
