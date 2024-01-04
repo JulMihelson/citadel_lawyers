@@ -48,27 +48,109 @@ body {
   font-weight: 400;
   color: var(--white-text);
   letter-spacing: 2px;
+  position: relative;
 }
 .container {
   max-width: 100%;
   margin: 0;
 }
 
+@media screen and (max-width: 374.98px) {
+  .container {
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 335px;
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 /*ХЕДДЕР*/
 .header-container {
   position: fixed;
   top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: clamp(480px, 100%, 100vw);
+  /* width: clamp(480px, 100%, 100vw); */
   z-index: 100;
   background-color: rgba(10, 10, 10, 0.5);
 }
+@media screen and (max-width: 374.98px) {
+  .header-container {
+    max-width: 375px;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .header-container {
+    max-width: 375px;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .header-container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .header-container {
+    min-width: 1200px;
+  }
+}
+
 .logo {
   display: inline-block;
 }
+
 /*меню в хеддері*/
+.burger-button {
+  display: block;
+}
+@media screen and (max-width: 374.98px) {
+  .burger-button {
+    max-width: 375px;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .burger-button {
+    max-width: 375px;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .burger-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .burger-button {
+    display: none;
+  }
+}
+
 .header-menu {
   display: flex;
   flex-direction: row;
@@ -77,6 +159,31 @@ body {
   gap: 40px;
   padding: 0 30px;
 }
+
+@media screen and (max-width: 374.98px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .header-menu {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .header-menu {
+    min-width: 1200px;
+  }
+}
+
 .header-menu-item {
   font-size: 16px;
   text-transform: uppercase;
