@@ -67,6 +67,7 @@ body {
 }
 .logo {
   display: inline-block;
+  filter: drop-shadow(2px 5px 2px var(--white-text));
 }
 /*меню в хеддері*/
 .header-menu {
