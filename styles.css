@@ -881,13 +881,6 @@ CAROUSEL .carousel {
     width: 130px;
   }
 
-  .contact-item {
-    font-size: 14px;
-  }
-
-  .copyright {
-    font-size: 14px;
-  }
   .contact-line::after {
     width: 100%;
   }
