@@ -730,6 +730,7 @@ CAROUSEL .carousel {
   align-items: center;
   padding: 100px 0px;
   max-height: 600px;
+  overflow: hidden;
 }
 .social-project-text {
   box-sizing: border-box;
