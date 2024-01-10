@@ -48,7 +48,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-
   font-weight: 400;
   color: var(--white-text);
   letter-spacing: 2px;
@@ -57,34 +56,36 @@ body {
 .container {
   max-width: 100%;
   margin: 0;
+  min-width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 *::before {
   box-sizing: border-box;
 }
 
-/* @media screen and (max-width: 374.98px) {
-  .container {
-    max-width: 280px;
-  }
-}
-
 @media screen and (min-width: 375px) {
   .container {
-    max-width: 335px;
+    width: 375px;
   }
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
-@media screen and (min-width: 1199.98px) {
+@media screen and (min-width: 1440px) {
   .container {
-    max-width: 1200px;
+    width: 1440px;
+    padding-left: 96px;
+    padding-right: 96px;
   }
-} */
+}
 
 /*ХЕДДЕР*/
 
@@ -803,49 +804,50 @@ CAROUSEL .carousel {
 /*FOOTER*/
 
 .footer-container {
-  margin-top: 80px;
+  margin-top: 60px;
   box-sizing: border-box;
   position: relative;
-  width: 100%;
+  width: 100vw;
   background-color: #1c1e1f;
   overflow: hidden;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  padding: 30px 100px;
+  padding: 10px 10px;
+}
+.logo {
+  width: 100px;
+  height: auto;
 }
 .contact-block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 80%;
 }
 .contact-line {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-
   overflow: hidden;
-  padding: 0 15px;
   padding-bottom: 20px;
   position: relative;
-  width: 100%;
+  width: fit-content;
 }
 
 .contact-item:hover {
   color: var(--orange-accent);
-  filter: grayscale(0);
 }
 .contact-item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 5px 0;
-  font-size: 18px;
+  font-size: 12px;
 }
 .contact-item svg {
-  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
   fill: var(--white-text);
 }
 .contact-item:hover svg,
@@ -859,6 +861,7 @@ CAROUSEL .carousel {
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+  font-size: 12px;
 }
 .contact-line::after {
   content: "";
@@ -867,4 +870,94 @@ CAROUSEL .carousel {
   background-color: #ffa500;
   position: absolute;
   bottom: 0;
+}
+
+@media screen and (min-width: 375px) {
+  .footer-container {
+    justify-content: space-around;
+    padding: 15px 15px;
+  }
+  .logo {
+    width: 130px;
+  }
+
+  .contact-item {
+    font-size: 14px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+  .contact-line::after {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    margin-top: 80px;
+    justify-content: space-evenly;
+    padding: 20px 50px;
+  }
+  .logo {
+    width: 200px;
+  }
+
+  .contact-line {
+    padding-bottom: 20px;
+  }
+
+  .contact-item {
+    font-size: 16px;
+  }
+  .contact-item svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+
+  .copyright {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .footer-container {
+    margin-top: 80px;
+
+    padding: 20px 40px;
+  }
+  .logo {
+    width: 180px;
+  }
+  .contact-block {
+    justify-content: space-between;
+  }
+  .contact-line {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .contact-item:hover {
+    color: var(--orange-accent);
+    filter: grayscale(0);
+  }
+  .contact-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  .contact-item svg {
+    margin-right: 10px;
+  }
+  .contact-item:hover svg,
+  .contact-item:focus svg {
+    fill: var(--orange-accent);
+  }
+  .copyright {
+    font-size: 14px;
+  }
 }
