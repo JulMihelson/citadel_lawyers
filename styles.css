@@ -58,6 +58,9 @@ body {
   max-width: 100%;
   margin: 0;
 }
+*::before {
+  box-sizing: border-box;
+}
 
 /* @media screen and (max-width: 374.98px) {
   .container {
@@ -84,6 +87,7 @@ body {
 } */
 
 /*ХЕДДЕР*/
+
 .header-container {
   position: fixed;
   box-sizing: border-box;
@@ -157,14 +161,24 @@ body {
 }
 
 /*HERO SECTION */
+.hero-container {
+  margin: 0;
+  width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
 .hero-titile {
+  width: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
   padding-left: 200px;
-  height: 100vh;
+
   color: var(--orange-accent);
   text-transform: uppercase;
   text-shadow: 1px 0 1px var(--black-text), 0 1px 1px var(--black-text),
@@ -174,9 +188,9 @@ body {
 .video-bg {
   position: absolute;
   top: 0;
-  left: 0;
-
+  right: 0;
   width: 100%;
+  height: auto;
   --webkit-transform: scaleX(1.5);
   --moz-transform: scaleX(1.72);
 }
