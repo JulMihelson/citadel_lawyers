@@ -64,6 +64,10 @@ body {
 *::before {
   box-sizing: border-box;
 }
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
 
 @media screen and (min-width: 375px) {
   .container {
