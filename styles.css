@@ -64,10 +64,6 @@ body {
 *::before {
   box-sizing: border-box;
 }
-*::-webkit-media-controls-start-playback-button {
-  display: none !important;
-  -webkit-appearance: none;
-}
 
 @media screen and (min-width: 375px) {
   .container {
@@ -192,6 +188,27 @@ body {
   height: auto;
   --webkit-transform: scaleX(1.5);
   --moz-transform: scaleX(1.72);
+
+  ::-webkit-media-controls-panel {
+    display: none !important;
+    -webkit-appearance: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  ::-webkit-media-controls-play-button {
+    display: none !important;
+    -webkit-appearance: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  ::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @keyframes ani {
