@@ -790,7 +790,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    margin-top: 80px;
     justify-content: space-evenly;
     padding: 20px 50px;
   }
@@ -818,8 +817,6 @@ body {
 
 @media screen and (min-width: 1025px) {
   .footer-container {
-    margin-top: 80px;
-
     padding: 20px 40px;
   }
   .logo {
