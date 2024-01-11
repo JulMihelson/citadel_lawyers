@@ -165,6 +165,7 @@ body {
 .hero-container {
   margin: 0;
   width: 100vw;
+  box-sizing: border-box;
   max-height: 100vh;
   overflow: hidden;
   position: relative;
@@ -224,14 +225,14 @@ body {
 }
 /*ПРО НАС*/
 .about-us {
+  width: 100vw;
   background-image: url(./assets/photo1704442187.jpeg);
-  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 20px;
   box-sizing: border-box;
   position: relative;
 }
@@ -239,12 +240,12 @@ body {
 .vert-line {
   background-color: var(--orange-accent);
   width: 1px;
-  height: 40px;
-  margin-bottom: 40px;
+  height: 25px;
+  margin-bottom: 10px;
 }
 .subtitle {
   color: var(--black-text);
-  font-size: 12px;
+  font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
@@ -252,25 +253,85 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   height: 100%;
 }
 .about-us-title {
   color: var(--black-text);
   margin-top: 10px;
-  font-size: 50px;
+  font-size: 30px;
   text-shadow: 2px 2px 5px var(--light-grey);
 }
 .about-us-information {
-  padding: 20px 300px;
+  padding: 15px 15px 150px;
   color: var(--light-grey);
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: 500;
   text-transform: none;
   text-align: justify;
-}
-.about-us-information div {
+  line-height: calc(16 / 12);
   overflow: hidden;
+  min-height: fit-content;
+}
+
+@media screen and (min-width: 375px) {
+  .vert-line {
+    background-color: var(--orange-accent);
+    width: 1px;
+    height: 40px;
+    margin-bottom: 30px;
+  }
+  .subtitle {
+    font-size: 10px;
+  }
+
+  .about-us-title {
+    font-size: 35px;
+  }
+  .about-us-information {
+    padding: 20px 30px 200px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding-top: 40px;
+  }
+
+  .vert-line {
+    height: 40px;
+  }
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .about-us-title {
+    font-size: 50px;
+  }
+  .about-us-information {
+    padding: 20px 30px 300px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .about-us {
+    padding-top: 50px;
+  }
+
+  .vert-line {
+    margin-bottom: 40px;
+  }
+
+  .about-us-title {
+    font-size: 50px;
+  }
+  .about-us-information {
+    padding: 30px 30px 300px;
+  }
 }
 
 /*PRACTICE*/
@@ -536,7 +597,7 @@ body {
 .social-content {
   box-sizing: border-box;
   position: relative;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
