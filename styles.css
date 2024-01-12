@@ -214,7 +214,7 @@ body {
   color: var(--orange-accent);
   font-size: 10px;
   padding-left: 30px;
-  font-weight: 200;
+  font-weight: 300;
   visibility: hidden;
   animation: ani 12s forwards;
 }
@@ -224,7 +224,7 @@ body {
   text-transform: none;
   margin-top: 10px;
   padding-left: 60px;
-  font-weight: 200;
+  font-weight: 300;
   visibility: hidden;
   animation: ani 12s forwards;
 }
