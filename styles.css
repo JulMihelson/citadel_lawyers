@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap"); */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap");
 :root {
   --white-text: rgb(224, 224, 224);
   --black-text: #303030;
@@ -177,6 +177,7 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+
   color: var(--orange-accent);
   text-transform: uppercase;
   text-shadow: 1px 0 1px var(--black-text), 0 1px 1px var(--black-text),
@@ -213,6 +214,7 @@ body {
   color: var(--orange-accent);
   font-size: 10px;
   padding-left: 30px;
+  font-weight: 200;
   visibility: hidden;
   animation: ani 12s forwards;
 }
@@ -222,6 +224,7 @@ body {
   text-transform: none;
   margin-top: 10px;
   padding-left: 60px;
+  font-weight: 200;
   visibility: hidden;
   animation: ani 12s forwards;
 }
@@ -248,10 +251,10 @@ body {
 
 @media screen and (min-width: 1025px) {
   .hero-moto {
-    font-size: 18px;
+    font-size: 22px;
   }
   .hero-sign {
-    font-size: 16px;
+    font-size: 20px;
     padding-left: 15%;
   }
 }
