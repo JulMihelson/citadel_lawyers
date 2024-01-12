@@ -188,27 +188,15 @@ body {
   height: auto;
   --webkit-transform: scaleX(1.5);
   --moz-transform: scaleX(1.72);
+}
 
-  ::-webkit-media-controls-panel {
-    display: none !important;
-    -webkit-appearance: none;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  ::-webkit-media-controls-play-button {
-    display: none !important;
-    -webkit-appearance: none;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  ::-webkit-media-controls-start-playback-button {
-    display: none !important;
-    -webkit-appearance: none;
-    opacity: 0;
-    visibility: hidden;
-  }
+.video-bg::-webkit-media-controls-panel,
+.video-bg::-webkit-media-controls-play-button,
+.video-bg::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 @keyframes ani {
