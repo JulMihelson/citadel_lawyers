@@ -102,7 +102,7 @@ body {
 
   z-index: 100;
   height: fit-content;
-  background-color: rgba(240, 240, 250, 0.1);
+  background-color: rgba(10, 10, 10, 0.8);
 }
 
 .logo {
@@ -224,7 +224,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgba(46, 47, 66, 0.4);
+  background-color: rgba(5, 2, 2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -300,7 +300,7 @@ body {
     justify-content: space-between;
     width: 100%;
     z-index: 100;
-    background-color: rgba(10, 10, 10, 0.5);
+    background-color: rgba(10, 10, 10, 0.8);
   }
 
   .logo {
@@ -359,7 +359,7 @@ body {
     justify-content: space-between;
     width: 100%;
     z-index: 100;
-    background-color: rgba(10, 10, 10, 0.5);
+    background-color: rgba(10, 10, 10, 0.8);
   }
 
   .logo {
