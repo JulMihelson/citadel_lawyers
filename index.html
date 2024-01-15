@@ -2,6 +2,7 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CITADEL LAWYERS | Наша експертиза - Ваш спокій</title>
     <link
@@ -15,33 +16,42 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- <header>
+    <header>
       <div class="container">
         <nav class="header-container">
           <a href="./index.html"
             ><img
               class="logo"
-              src="./assets/Логотип_Цитадель_Лоєрс_для_сайту_ENG_копія.svg"
+              src="./assets/main_logo.svg"
               alt="цитадель адвокатів"
-              width="200"
           /></a>
-                   <ul class="header-menu">
+          <button
+            class="burger-button js-open-menu"
+            type="button"
+            aria-label="button for open mobile menu"
+            onClick="toggleMenu"
+          >
+            <svg class="burger" width="20">
+              <use href="./assets/sprite.svg#burger-menu"></use>
+            </svg>
+          </button>
+          <ul class="header-menu">
             <li class="header-menu-item">
-              <a class="link active-link" href="#about_us">про нас</a>
+              <a href="#about_us">про нас</a>
             </li>
             <li class="header-menu-item">
-              <a class="link" href="#practicies">практики</a>
+              <a href="#practicies">практики</a>
             </li>
             <li class="header-menu-item">
-              <a class="link" href="#social-project">соціальний проєкт</a>
+              <a href="#social-project">соціальний проєкт</a>
             </li>
             <li class="header-menu-item">
-              <a class="link" href="#contacts">контакти</a>
+              <a href="#contacts">контакти</a>
             </li>
           </ul>
         </nav>
       </div>
-    </header> -->
+    </header>
     <main>
       <section id="hero" class="hero-container">
         <video
@@ -56,10 +66,11 @@
         ></video>
 
         <div class="hero-titile">
-          <h1 class="hero-moto">Наша експертиза - Ваш спокій</h1>
-          <h3 class="hero-sign">citadel lawyers</h3>
+          <p class="hero-moto">Наша експертиза - Ваш спокій</p>
+          <p class="hero-sign">citadel lawyers</p>
         </div>
       </section>
+
       <section class="about-us" id="about_us">
         <div class="content">
           <div class="vert-line"></div>
@@ -77,6 +88,7 @@
           </div>
         </div>
       </section>
+
       <section id="practicies" class="practicies">
         <div class="header">
           <p class="subtitle-practicies">наші можливості</p>
@@ -277,6 +289,7 @@
           </div>
         </div>
       </section>
+
       <section id="social-project" class="social-content">
         <div class="social-project-text">
           <div class="social-title">проєкт соціальної відповідальності</div>
@@ -302,11 +315,12 @@
         </ul>
       </section>
     </main>
+
     <footer id="contacts" class="footer-container">
       <a href="./index.html"
         ><img
           class="logo"
-          src="./assets/Логотип_Цитадель_Лоєрс_для_сайту_ENG_копія.svg"
+          src="./assets/main_logo.svg"
           alt="цитадель адвокатів"
           width="250"
       /></a>
@@ -344,7 +358,39 @@
       </div>
     </footer>
 
+    <div class="backdrop is-hidden">
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button
+          class="button-close js-close-menu"
+          aria-label="button for close mobile menu"
+          type="button"
+          onClick="toggleMenu"
+        >
+          <svg class="close-icon">
+            <use href="./assets/sprite.svg#close-cross"></use>
+          </svg>
+        </button>
+        <div>
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a href="#about_us">про нас</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#practicies">практики</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#social-project">соціальний проєкт</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#contacts">контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="./gallery.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
