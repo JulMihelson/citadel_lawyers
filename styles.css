@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap");
-@charset "UTF-8";
 
 :root {
   --white-text: rgb(224, 224, 224);
@@ -130,7 +129,9 @@ body {
   transform: scale(1.1);
   transition: transform 250ms ease-in 0s;
 }
-
+.mobile-menu-item::before {
+  content: "\25C6";
+}
 /*BURGER MENU*/
 
 .burger-button {
@@ -643,6 +644,12 @@ body {
   text-transform: none;
   text-align: justify;
 }
+.card-text li {
+  font-size: 10px;
+}
+.card-text li:before {
+  content: "\2BC8";
+}
 .about-us-title-practicies {
   color: var(--white-text);
   margin-top: 10px;
@@ -796,6 +803,9 @@ body {
 @media screen and (max-width: 767px) {
   .card {
     width: 100%;
+  }
+  .card-text li {
+    font-size: 12px;
   }
   .icon {
     width: 70px;
