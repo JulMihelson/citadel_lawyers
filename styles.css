@@ -644,10 +644,10 @@ body {
   text-transform: none;
   text-align: justify;
 }
-.card-text li {
+.li-text {
   font-size: 10px;
 }
-.card-text li:before {
+.li-text::before {
   content: "\2BC8";
 }
 .about-us-title-practicies {
@@ -804,7 +804,7 @@ body {
   .card {
     width: 100%;
   }
-  .card-text li {
+  .li-text {
     font-size: 12px;
   }
   .icon {
@@ -826,7 +826,7 @@ body {
   .card {
     width: calc((100% / 2) - 30px);
   }
-  .card-text li {
+  .li-text {
     font-size: 14px;
   }
   .icon {
@@ -860,7 +860,7 @@ body {
     padding: 20px;
     font-size: 18px;
   }
-  .card-text li {
+  .li-text {
     font-size: 14px;
   }
   .card:nth-of-type(2n + 2) .card__expander {
