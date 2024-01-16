@@ -457,21 +457,44 @@ body {
   visibility: hidden;
   animation: ani 12s forwards;
 }
+.hero-sign {
+  color: var(--orange-accent);
+  font-size: 7px;
+  text-transform: none;
+  margin-top: 10px;
+  padding-left: 60px;
+  font-weight: 300;
+  visibility: hidden;
+  animation: ani 12s forwards;
+}
 
 @media screen and (min-width: 375px) {
   .hero-moto {
     font-size: 8px;
   }
+  .hero-sign {
+    font-size: 7px;
+    padding-left: 15%;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .hero-moto {
     font-size: 14px;
+  }
+  .hero-sign {
+    font-size: 12px;
+    padding-left: 15%;
   }
 }
 
 @media screen and (min-width: 1025px) {
   .hero-moto {
     font-size: 22px;
+  }
+  .hero-sign {
+    font-size: 20px;
+    padding-left: 15%;
   }
 }
 
@@ -603,7 +626,13 @@ body {
   letter-spacing: 1px;
   font-weight: 600;
 }
-
+.card-title {
+  font-size: 12px;
+  color: var(--black-text);
+  margin: 5px 0 10px 0;
+  font-weight: 600;
+  padding: 5px 10px;
+}
 .card-text {
   font-size: 10px;
   font-weight: 400;
