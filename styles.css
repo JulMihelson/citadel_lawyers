@@ -826,6 +826,9 @@ body {
   .card {
     width: calc((100% / 2) - 30px);
   }
+  .card-text li {
+    font-size: 14px;
+  }
   .icon {
     width: 100px;
   }
@@ -857,7 +860,9 @@ body {
     padding: 20px;
     font-size: 18px;
   }
-
+  .card-text li {
+    font-size: 14px;
+  }
   .card:nth-of-type(2n + 2) .card__expander {
     width: calc(200% + 15px);
     left: calc(-100% - 15px);
