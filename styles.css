@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap");
+@charset "UTF-8";
+
 :root {
   --white-text: rgb(224, 224, 224);
   --black-text: #303030;
