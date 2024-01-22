@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 :root {
   --white-text: rgb(224, 224, 224);
   --black-text: #303030;
@@ -44,7 +44,8 @@ button {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: var(--white-text);
   letter-spacing: 2px;
@@ -406,6 +407,13 @@ body {
   position: relative;
   height: auto;
 }
+.bg {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./assets/bg-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .hero-titile {
   position: absolute;
@@ -424,10 +432,11 @@ body {
 }
 
 .video-bg {
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto;
   --webkit-transform: scaleX(1.5);
-  --moz-transform: scaleX(1.72);
+  --moz-transform: scaleX(1.72); */
+  display: none;
 }
 
 .video-bg::-webkit-media-controls-panel,
@@ -451,50 +460,75 @@ body {
 }
 .hero-moto {
   color: var(--orange-accent);
-  font-size: 8px;
+  font-size: 12px;
   padding-left: 30px;
   font-weight: 300;
   visibility: hidden;
   animation: ani 12s forwards;
+  line-height: calc(18 / 12);
 }
 .hero-sign {
   color: var(--orange-accent);
-  font-size: 7px;
+  font-size: 10px;
   text-transform: none;
   margin-top: 10px;
   padding-left: 60px;
   font-weight: 300;
   visibility: hidden;
   animation: ani 12s forwards;
+  line-height: calc(16 / 10);
 }
 
 @media screen and (min-width: 375px) {
-  .hero-moto {
-    font-size: 8px;
-  }
   .hero-sign {
-    font-size: 7px;
     padding-left: 15%;
+  }
+  .bg {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/bg-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .bg {
+    display: none;
+  }
+  .video-bg {
+    display: block;
+    width: 100%;
+    height: auto;
+    --webkit-transform: scaleX(1.5);
+    --moz-transform: scaleX(1.72);
+  }
   .hero-moto {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: calc(22 / 18);
   }
   .hero-sign {
-    font-size: 12px;
+    font-size: 16px;
     padding-left: 15%;
+    line-height: calc(20 / 16);
   }
 }
 
 @media screen and (min-width: 1025px) {
   .hero-moto {
     font-size: 22px;
+    line-height: calc(26 / 22);
   }
   .hero-sign {
     font-size: 20px;
     padding-left: 15%;
+    line-height: calc(24 / 20);
+  }
+  .video-bg {
+    width: 100%;
+    height: auto;
+    --webkit-transform: scaleX(1.5);
+    --moz-transform: scaleX(1.72);
   }
 }
 
