@@ -461,7 +461,7 @@ body {
 }
 .hero-moto {
   color: var(--orange-accent);
-  font-size: 12px;
+  font-size: 16px;
   padding-left: 30px;
   font-weight: 300;
   visibility: hidden;
@@ -470,7 +470,7 @@ body {
 }
 .hero-sign {
   color: var(--orange-accent);
-  font-size: 10px;
+  font-size: 14px;
   text-transform: none;
   margin-top: 10px;
   padding-left: 60px;
@@ -576,11 +576,11 @@ body {
 .about-us-information {
   padding: 15px 30px 150px;
   color: var(--light-grey);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   text-transform: none;
   text-align: justify;
-  line-height: 1.4em;
+  line-height: 1.5em;
   overflow: hidden;
   min-height: fit-content;
   letter-spacing: normal;
@@ -603,7 +603,6 @@ body {
   .about-us-information {
     padding: 20px 70px 200px;
     font-weight: 400;
-    line-height: calc(18 / 14);
   }
 }
 
@@ -624,7 +623,7 @@ body {
   }
   .about-us-information {
     padding: 20px 100px 300px;
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
@@ -669,7 +668,7 @@ body {
   padding: 5px 10px;
 }
 .card-text {
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 400;
   color: var(--black-text);
   row-gap: 12px;
@@ -678,10 +677,12 @@ body {
   flex-wrap: nowrap;
   text-transform: none;
   text-align: left;
+  line-height: 1.3em;
 }
 .li-text {
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: normal;
+  line-height: 1.3em;
 }
 .li-text::before {
   content: "\2BC8";
@@ -842,6 +843,8 @@ body {
   }
   .li-text {
     font-size: 14px;
+    letter-spacing: normal;
+    line-height: 1.3em;
   }
   .icon {
     width: 70px;
@@ -864,6 +867,8 @@ body {
   }
   .li-text {
     font-size: 15px;
+    letter-spacing: normal;
+    line-height: 1.3em;
   }
   .icon {
     width: 100px;
@@ -897,7 +902,9 @@ body {
     font-size: 18px;
   }
   .li-text {
-    font-size: 15px;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 1.3em;
   }
   .card:nth-of-type(2n + 2) .card__expander {
     width: calc(200% + 15px);
@@ -971,11 +978,11 @@ body {
 .social-descr {
   font-family: "Roboto", sans-serif;
   color: var(--black-text);
-  font-size: 14px;
+  font-size: 15px;
   text-transform: none;
-  letter-spacing: inherit;
+  letter-spacing: normal;
   font-weight: 400;
-  line-height: 1.2em;
+  line-height: 1.5em;
   text-align: justify;
 }
 @media screen and (min-width: 375px) {
@@ -984,9 +991,6 @@ body {
   }
   .social-title {
     font-size: 24px;
-  }
-  .social-descr {
-    font-size: 14px;
   }
 }
 
@@ -1071,7 +1075,7 @@ body {
   }
   .social-descr {
     color: var(--black-text);
-    font-size: 18px;
+    font-size: 20px;
     text-transform: none;
     letter-spacing: inherit;
     font-weight: 400;
@@ -1087,7 +1091,7 @@ body {
     font-size: 50px;
   }
   .social-descr {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
