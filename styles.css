@@ -44,12 +44,13 @@ button {
 body {
   margin: 0;
   padding: 0;
-  /* font-family: "Montserrat", sans-serif; */
+
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: var(--white-text);
   letter-spacing: normal;
   position: relative;
+  line-height: 1.2em;
 }
 
 *::before {
@@ -575,11 +576,11 @@ body {
 .about-us-information {
   padding: 15px 30px 150px;
   color: var(--light-grey);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: none;
   text-align: justify;
-  line-height: calc(16 / 12);
+  line-height: 1.4em;
   overflow: hidden;
   min-height: fit-content;
   letter-spacing: normal;
@@ -602,7 +603,6 @@ body {
   .about-us-information {
     padding: 20px 70px 200px;
     font-weight: 400;
-    font-size: 14px;
     line-height: calc(18 / 14);
   }
 }
@@ -680,7 +680,7 @@ body {
   text-align: justify;
 }
 .li-text {
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: normal;
 }
 .li-text::before {
@@ -841,7 +841,7 @@ body {
     width: 100%;
   }
   .li-text {
-    font-size: 12px;
+    font-size: 14px;
   }
   .icon {
     width: 70px;
@@ -969,12 +969,13 @@ body {
   overflow: hidden;
 }
 .social-descr {
+  font-family: "Roboto", sans-serif;
   color: var(--black-text);
-  font-size: 12px;
+  font-size: 14px;
   text-transform: none;
-  letter-spacing: 1px;
+  letter-spacing: inherit;
   font-weight: 400;
-  line-height: calc(18 / 12);
+  line-height: 1.2em;
   text-align: justify;
 }
 @media screen and (min-width: 375px) {
@@ -986,7 +987,6 @@ body {
   }
   .social-descr {
     font-size: 14px;
-    line-height: calc(22 / 14);
   }
 }
 
@@ -1010,7 +1010,6 @@ body {
   }
   .social-descr {
     font-size: 18px;
-    line-height: calc(24 / 18);
   }
 }
 
@@ -1074,9 +1073,8 @@ body {
     color: var(--black-text);
     font-size: 18px;
     text-transform: none;
-    letter-spacing: 1px;
+    letter-spacing: inherit;
     font-weight: 400;
-    line-height: calc(24 / 18);
   }
 }
 
@@ -1090,7 +1088,6 @@ body {
   }
   .social-descr {
     font-size: 18px;
-    line-height: calc(24 / 18);
   }
 }
 
