@@ -48,7 +48,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: var(--white-text);
-  letter-spacing: 2px;
+  letter-spacing: normal;
   position: relative;
 }
 
@@ -576,12 +576,13 @@ body {
   padding: 15px 30px 150px;
   color: var(--light-grey);
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: none;
   text-align: justify;
   line-height: calc(16 / 12);
   overflow: hidden;
   min-height: fit-content;
+  letter-spacing: normal;
 }
 
 @media screen and (min-width: 375px) {
@@ -680,6 +681,7 @@ body {
 }
 .li-text {
   font-size: 10px;
+  letter-spacing: normal;
 }
 .li-text::before {
   content: "\2BC8";
