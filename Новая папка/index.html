@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CITADEL LAWYERS | Наша експертиза - Ваш спокій</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="header-container">
+          <a href="./index.html"
+            ><img
+              class="logo"
+              src="./assets/main_logo.svg"
+              alt="цитадель адвокатів"
+          /></a>
+          <button
+            class="burger-button js-open-menu"
+            type="button"
+            aria-label="button for open mobile menu"
+            onClick="toggleMenu"
+          >
+            <svg class="burger" width="20">
+              <use href="./assets/sprite.svg#burger-menu"></use>
+            </svg>
+          </button>
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a href="#about_us">про нас</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#practicies">практики</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#social-project">соціальний проєкт</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#contacts">контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="hero-container">
+        <div class="bg"></div>
+        <video
+          class="video-bg"
+          loading="lazy"
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="auto"
+          src="./assets/video_1080_compressed.mp4"
+        ></video>
+
+        <div class="hero-titile">
+          <p class="hero-moto">Наша експертиза - Ваш спокій</p>
+          <p class="hero-sign">citadel lawyers</p>
+        </div>
+      </section>
+
+      <section class="about-us" id="about_us">
+        <div class="content">
+          <div class="vert-line"></div>
+          <p class="subtitle">команда</p>
+          <div class="about-us-title">ПРО НАС</div>
+          <div class="about-us-information">
+            <strong>CITADEL LAWYERS</strong> — юридична компанія, яка обʼєднує в
+            команду професоналів своєї справи зі спільними цінностями та
+            підходом до роботи. У кожного нашого юриста у портфелі понад 10
+            років практичного досвіду та низка успішних проектів у сфері
+            супроводу інвестиційних проектів, операцій з нерухомістю,
+            корпоративному, податковому й IT праві. Ми обʼєднали свою
+            експертність та досвід в єдину структуру для того, щоб допомогти
+            нашим клієнтам успішно будувати бізнес, не порушуючи межі юридичного
+            контуру.
+          </div>
+        </div>
+      </section>
+
+      <section id="practicies" class="practicies">
+        <div class="header">
+          <p class="subtitle-practicies">наші можливості</p>
+          <div class="about-us-title-practicies">ПРАКТИКИ</div>
+        </div>
+        <div class="wrapper">
+          <div class="cards">
+            <div class="card [ is-collapsed ]">
+              <div class="card__inner [ js-expander ]">
+                <svg class="icon">
+                  <use href="./assets/sprite.svg#development"></use>
+                </svg>
+                <span class="development"
+                  >Юридичне супроводження інвестиційних і будівельних проектів,
+                  а також операцій з нерухомістю</span
+                >
+              </div>
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                <div class="card__content">
+                  <ul class="card-text">
+                    <li class="li-text">
+                      розроблення юридичного контуру і механізмів інвестування у
+                      житлову та комерційну нерухомість (ФФБ, цільові
+                      корпоративні облігації, договори купівлі-продажу
+                      неподільних обʼєктів незавершеного будівництва/майбутніх
+                      обʼєктів нерухомості);
+                    </li>
+                    <li class="li-text">
+                      консультування з питань діяльності інститутів спільного
+                      інвестування (ПІФ, КІФ), як інструментів інвестиційної
+                      діяльності;
+                    </li>
+                    <li class="li-text">
+                      комплексний юридичний супровід процесу будівництва
+                      обʼєктів нерухомості різних категорій складності;
+                    </li>
+                    <li class="li-text">
+                      консультування забудовників та девелоперів з питань
+                      застосування положень нового Закону України «Про
+                      гарантування речових прав на об’єкти нерухомого майна, які
+                      будуть споруджені в майбутньому» під час реалізації
+                      будівельно-інвестиційних проєктів;
+                    </li>
+                    <li class="li-text">
+                      розроблення договорів у сфері інвестування та будівництва;
+                    </li>
+                    <li class="li-text">
+                      проведення комплексного Due Diligence перед реалізацією
+                      інвестиційних проєктів, купівлі бізнесів чи обʼєктів
+                      нерухомості;
+                    </li>
+                    <li class="li-text">
+                      консультування з питань оподаткування учасників
+                      інвестиційних проєктів та будівельного процесу;
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card [ is-collapsed ]">
+              <div class="card__inner [ js-expander ]">
+                <svg class="icon">
+                  <use href="./assets/sprite.svg#corporative"></use>
+                </svg>
+                <span class="corporative">Корпоративне право, M&A</span>
+              </div>
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                <div class="card__content">
+                  <ul class="card-text">
+                    <li class="li-text">
+                      розроблення корпоративних договорів під домовленості
+                      бізнес-партнерів, включаючи розроблення індивідуальних
+                      положень щодо pre-emptive right, процедур tag along, drag
+                      along, варіантів виходу з dead lock;
+                    </li>
+                    <li class="li-text">
+                      підготовка угод М&А різних рівнів складності, у тому числі
+                      за участю іноземного елементу;
+                    </li>
+                    <li class="li-text">
+                      проведення комплексного Due Diligence перед реалізацією
+                      угод М&А;
+                    </li>
+                    <li class="li-text">
+                      консультування з питань проведення операцій з
+                      корпоративними правами, статутним капіталом
+                      (збільшення\зменшення статутного капіталу; внесення
+                      додаткових вкладів різними видами майна\майновими
+                      правами\правами вимоги; конвертація боргу в капітал; викуп
+                      частки у власному статутному капіталі);
+                    </li>
+                    <li class="li-text">
+                      супроводження процесів реорганізації та виділу;
+                    </li>
+                    <li class="li-text">
+                      консультування з питань створення та діяльності інститутів
+                      спільного інвестування (ПІФ, КІФ).
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card [ is-collapsed ]">
+              <div class="card__inner [ js-expander ]">
+                <svg class="icon">
+                  <use href="./assets/sprite.svg#tax"></use>
+                </svg>
+                <span class="development">Податкове право</span>
+              </div>
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                <div class="card__content">
+                  <ul class="card-text">
+                    <li class="li-text">
+                      консультування з різних аспектів оподаткування (ПДВ,
+                      податок на прибуток, WHT, єдиний податок), бухгалтерського
+                      й податкового обліку, включаючи міжнародні та внутрішні
+                      правила оподаткування;
+                    </li>
+                    <li class="li-text">
+                      підготовка письмових пояснень щодо реєстрації зупинених
+                      податкових накладних, підготовка скарг на рішення про
+                      відмову в реєстрації податкових накладних, про
+                      неврахування таблиці даних платника податку, про
+                      відповідність платника податку критеріям ризиковості;
+                    </li>
+                    <li class="li-text">
+                      розроблення корпоративних та міжнародних моделей
+                      оподаткування під запити клієнта та його бізнес процеси;
+                    </li>
+                    <li class="li-text">
+                      представництво та захист інтересів клієнта під час
+                      проведення податкових перевірок, підготовка заперечень на
+                      акти перевірок, та скарг на ППР;
+                    </li>
+                    <li class="li-text">
+                      представництво інтересів клієнта у податкових спорах;
+                    </li>
+                    <li class="li-text">консультування у питаннях КІК, CRS;</li>
+                    <li class="li-text">
+                      консультування з питань оподаткування під час реалізації
+                      угод М&А, включаючи особливості застосування конвенції про
+                      уникнення подвійного оподаткування, конвенції MLI.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card [ is-collapsed ]">
+              <div class="card__inner [ js-expander ]">
+                <svg class="icon">
+                  <use href="./assets/sprite.svg#it"></use>
+                </svg>
+                <span class="development">IT-право</span>
+              </div>
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                <div class="card__content">
+                  <ul class="card-text">
+                    <li class="li-text">
+                      повний юридичний супровід діяльності ІТ-компаній
+                      (продуктових, аутсорсингових, стартапів);
+                    </li>
+                    <li class="li-text">
+                      консультування ІТ-компаній щодо особливостей застосування
+                      режиму Дія.City;
+                    </li>
+                    <li class="li-text">
+                      підготовка договорів для ІТ-компаній (гіг-контракти,
+                      трудові договори, договори на розробку програмного
+                      забезпечення);
+                    </li>
+                    <li class="li-text">
+                      консультування у питаннях інтелектуальної власності;
+                    </li>
+                    <li class="li-text">
+                      супроводження та юридичне оформлення рішень з венчурного
+                      інвестування для стартапів (Convertible loan, Liquidation
+                      Preferences, Option&ESOP, Warranties&Indemnities,
+                      Liquidated Damages);
+                    </li>
+                    <li class="li-text">
+                      повний юридичний супровід діяльності ІТ-компаній.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="social-project" class="social-content">
+        <div class="social-project-text">
+          <div class="social-title">проєкт соціальної відповідальності</div>
+          <div class="social-descr">
+            Один із напрямів діяльності компанії — надання безоплатних
+            консультацій благодійним фондам та громадським організаціям щодо
+            питань, повʼязаних з наданням благодійної допомоги силам оборони та
+            громадянам, які постраждали від російської військової агресії.
+          </div>
+        </div>
+        <ul class="social-project-list">
+          <li class="social-project-img">
+            <a href="https://btfv.org.ua/"
+              ><img src="./assets/btfv_logo.png"
+            /></a>
+          </li>
+          <li class="social-project-img">
+            <a href="https://svoyi.org.ua/"
+              ><img src="./assets/38a95674-663a-48ed-9fa0-99d51cdde83e.png"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="contacts" class="footer-container">
+      <a href="./index.html"
+        ><img
+          class="logo"
+          src="./assets/main_logo.svg"
+          alt="цитадель адвокатів"
+          width="250"
+      /></a>
+      <div class="contact-block">
+        <ul class="contact-line">
+          <li class="contact-item">
+            <svg>
+              <use href="./assets/sprite.svg#email-svgrepo-com"></use>
+            </svg>
+            <a href="mailto:citadellawyers@gmail.com"
+              >citadel.lawyers.ua@gmail.com</a
+            >
+          </li>
+          <li class="contact-item">
+            <svg>
+              <use
+                href="./assets/sprite.svg#telephone-typewriter-svgrepo-com"
+              ></use>
+            </svg>
+            <a href="tel:+380633089337">+38 063 308 93 37 </a>
+          </li>
+          <li class="contact-item">
+            <svg>
+              <use href="./assets/sprite.svg#address"></use>
+            </svg>
+            <a href="https://maps.app.goo.gl/r8JqjMeiHkC2CvdK7"
+              >м. Київ, бул-р Шевченка, 35</a
+            >
+          </li>
+        </ul>
+        <div class="copyright">
+          <div>all rights reserved</div>
+          <div>2024</div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button
+          class="button-close js-close-menu"
+          aria-label="button for close mobile menu"
+          type="button"
+          onClick="toggleMenu"
+        >
+          <svg class="close-icon">
+            <use href="./assets/sprite.svg#close-cross"></use>
+          </svg>
+        </button>
+        <div>
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item" onClick="closeMenu">
+              <a href="#about_us">про нас</a>
+            </li>
+            <li class="mobile-menu-item" onClick="closeMenu">
+              <a href="#practicies">практики</a>
+            </li>
+            <li class="mobile-menu-item" onClick="closeMenu">
+              <a href="#social-project">соціальний проєкт</a>
+            </li>
+            <li class="mobile-menu-item" onClick="closeMenu">
+              <a href="#contacts">контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./gallery.js"></script>
+    <script src="./mobile-menu.js"></script>
+  </body>
+</html>
